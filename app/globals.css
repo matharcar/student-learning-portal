@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f3fff7;
+  --foreground: #0f172a;
+  --card: rgba(255, 255, 255, 0.85);
+  --muted: #64748b;
+  --line: rgba(32, 132, 88, 0.16);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  min-height: calc(100vh - 72px);
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+.card {
+  @apply rounded-2xl border border-brand-100 bg-white p-5 shadow-soft;
+}
+
+.section-title {
+  @apply text-2xl font-bold text-slate-900;
+}
